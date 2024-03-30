@@ -28,7 +28,7 @@ If you'd like to Beta test new features, please join the [support server] and yo
 
 ## Bug Reports
 
-Please report bugs in the [support server].
+Please report bugs in the issue tracker or [support server].
 
 ## Contributing
 
