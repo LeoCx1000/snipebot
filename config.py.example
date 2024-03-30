@@ -1,0 +1,16 @@
+import sys
+
+TESTING = sys.platform == "darwin"
+
+
+_token = ""
+_test_token = ""
+TOKEN = _test_token if TESTING else _token
+
+
+_db_url = "sqlite://snipes.sqlite"
+_test_db_url = "sqlite://testing_snipes.sqlite"
+DB_URL = _test_db_url if TESTING else _db_url
+
+
+DBL_TOKEN = ""

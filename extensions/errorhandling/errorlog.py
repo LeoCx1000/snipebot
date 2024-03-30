@@ -1,0 +1,1 @@
+# Holds code for logging errors to the db (maybe to a webhook too)
