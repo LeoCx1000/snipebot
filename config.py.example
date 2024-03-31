@@ -8,9 +8,14 @@ _test_token = ""
 TOKEN = _test_token if TESTING else _token
 
 
-_db_url = "sqlite://snipes.sqlite"
-_test_db_url = "sqlite://testing_snipes.sqlite"
+_db_url = "postgres://user:pass@host:port/database"
+_test_db_url = "postgres://localhost/snipebot"
 DB_URL = _test_db_url if TESTING else _db_url
 
+_prefix = "~"
+_test_prefix = "t~"
+PREFIX = _test_prefix if TESTING else _prefix
+
+MAX_MESSAGES = 50_000
 
 DBL_TOKEN = ""

@@ -1,14 +1,16 @@
 import datetime
 import pkgutil
 
+import asyncpg
 import cachetools
 import discord
 from discord.ext import commands
 
 
 class SnipeBot(commands.AutoShardedBot):
-    def __init__(self, command_prefix, **options):
-        super().__init__(command_prefix, **options)
+    def __init__(self, pool: asyncpg.Pool, **options):
+        super().__init__(**options)
+        self.pool = pool
         self.STARTED_AT: datetime.datetime = discord.utils.utcnow()
         self.mem_cache: cachetools.TTLCache = cachetools.TTLCache(5000, 60.0)
 

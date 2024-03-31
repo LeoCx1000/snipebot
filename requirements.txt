@@ -3,5 +3,5 @@ pillow
 psutil
 asyncpg
 
-git+https://github.com/Gorialis/jishaku
-git+https://github.com/Rapptz/discord.py
+jishaku @ git+https://github.com/Gorialis/jishaku
+discord.py[speed] @ git+https://github.com/Rapptz/discord.py
