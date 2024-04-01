@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 
 from bot import SnipeBot
-from utils.color import randpastel_color
+from utils.color import PastelColor
 
 _logger = logging.getLogger(__name__)
 
@@ -23,7 +23,7 @@ __**Available Commands**__
 
 
 def get_base_embed() -> discord.Embed:
-    return discord.Embed(color=randpastel_color())
+    return discord.Embed(color=PastelColor())
 
 
 class HelpView(discord.ui.View):
